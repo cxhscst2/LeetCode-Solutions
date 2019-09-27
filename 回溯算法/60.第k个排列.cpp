@@ -33,7 +33,7 @@ class Solution {
 		}
 		string getPermutation(int n, int k){
 			K = k;
-            memset(c, 0, sizeof c);
+            		memset(c, 0, sizeof c);
 			dfs(1, n);
 			return st;
 		}
