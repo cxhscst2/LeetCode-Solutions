@@ -45,7 +45,7 @@ class LRUCache {
 				mp.erase(delkey);
 			}
 
-			else ++cnt;
+2			else ++cnt;
 
 			queue.push_front(MP(key, value));
 			mp[key] = queue.begin();
