@@ -23,7 +23,6 @@ class Solution {
 				check(n);
 				return;
 			}
-
 			rep(i, 1, n) if (!c[i]){
 				a[x] = i;
 				c[i] = 1;
