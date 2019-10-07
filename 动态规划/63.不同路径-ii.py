@@ -10,7 +10,6 @@ class Solution:
         n = len(a)
         m = len(a[0])
 
-
         c = [[0] * m for i in range(n)]
 
 

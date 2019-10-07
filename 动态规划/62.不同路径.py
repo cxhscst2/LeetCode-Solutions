@@ -16,6 +16,5 @@ class Solution:
                 c[i][j] = c[i - 1][j - 1] + c[i - 1][j]
         
         return c[m + n - 2][n - 1]
-        
 # @lc code=end
 
