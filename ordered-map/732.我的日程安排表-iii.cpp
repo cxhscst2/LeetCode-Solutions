@@ -53,28 +53,28 @@
  * 
  */
 class MyCalendarThree {
-public:
-    MyCalendarThree() {
-        mp.clear();
-    }
-    
-    int book(int s, int t){
-        ++mp[s];
-        --mp[t];
+	public:
+		MyCalendarThree() {
+			mp.clear();
+		}
 
-        int ret = 0, now = 0;
+		int book(int s, int t){
+			++mp[s];
+			--mp[t];
 
-        for (auto u : mp){
-            now += u.second;
-            ret = max(ret, now);
-        }
+			int ret = 0, now = 0;
+
+			for (auto u : mp){
+				now += u.second;
+				ret = max(ret, now);
+			}
 
 
-        return ret;    
-    }
+			return ret;    
+		}
 
-private:
-    map <int, int> mp;
+	private:
+		map <int, int> mp;
 };
 
 /**
